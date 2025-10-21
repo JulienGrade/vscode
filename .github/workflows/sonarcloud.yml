@@ -24,4 +24,7 @@ jobs:
           args: >
             -Dsonar.projectKey=JulienGrade_vscode
             -Dsonar.organization=juliengrade
-            -Dsonar.exclusions=**/*.dart,**/node_modules/**,**/out/**,**/dist/**,**/build/**
+            -Dsonar.c.file.suffixes=-
+            -Dsonar.cpp.file.suffixes=-
+            -Dsonar.objc.file.suffixes=-
+            -Dsonar.exclusions=**/node_modules/**,**/out/**,**/dist/**,**/build/**,**/*.dart,**/*.c,**/*.cpp,**/*.m,**/*.mm,**/*.h
